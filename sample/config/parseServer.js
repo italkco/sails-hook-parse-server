@@ -1,5 +1,5 @@
 module.exports.parseServer = {
-  mountPoint: '/parse',
+  mountPath: '/parse',
   parseServerConfig: {
     databaseURI: 'mongodb://localhost:27017/dev', // Connection string for your MongoDB database
     cloud: '/home/myApp/cloud/main.js', // Absolute path to your Cloud Code

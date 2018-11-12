@@ -5,6 +5,8 @@ module.exports = (sails) => {
   return {
     configure: function () {
 
+      sails.log.info('sails.hook.parseServer:configure:started');
+
       if (!sails.config.parseServer) {
         const help = `
         {
@@ -38,6 +40,8 @@ module.exports = (sails) => {
 
       // Set the Parse Server wrapper (Express application) as global Sails.js middleware
       sails.config.http.middleware['parseServer'] = cparseServerAppWrapper;
+
+      sails.log.info('sails.hook.parseServer:configure:finished');
     }
   }
 }

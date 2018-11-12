@@ -39,7 +39,7 @@ module.exports = (sails) => {
       parseServerAppWrapper.use(sails.config.parseServer.mountPath, parseServer);
 
       // Set the Parse Server wrapper (Express application) as global Sails.js middleware
-      sails.config.http.middleware['parseServer'] = cparseServerAppWrapper;
+      sails.config.http.middleware['parseServer'] = parseServerAppWrapper;
 
       sails.log.info('sails.hook.parseServer:configure:finished');
     }

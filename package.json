@@ -31,8 +31,8 @@
   "homepage": "https://github.com/italkco/sails-hook-parse-server#readme",
   "devDependencies": {},
   "dependencies": {
-    "express": "^4.16.4",
-    "parse-server": "^3.1.1"
+    "express": "^4.17.1",
+    "parse-server": "^3.9.0"
   },
   "publishConfig": {
     "tag": "latest"
